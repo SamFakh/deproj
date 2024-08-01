@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubusercontent.com/SamFakh/deproj/main/Medals.csv",
+			"url": "https://raw.githubusercontent.com/SamFakh/deproj/main/Teams.csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
