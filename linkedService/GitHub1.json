@@ -1,0 +1,13 @@
+{
+	"name": "GitHub1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "proj1",
+		"annotations": [],
+		"type": "GitHub",
+		"typeProperties": {
+			"username": "SamFakh",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEU2OUEwQUM5LUVEOUMtNDZCMC04NkRGLTI3RUYwRTA0MzhBM18zOTBjMzc3MS0yY2FhLTRhOWMtOWY3NS1jZmI1OWZjZGM0ZDAiDQp9"
+		}
+	}
+}
