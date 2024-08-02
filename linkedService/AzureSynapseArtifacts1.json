@@ -1,0 +1,12 @@
+{
+	"name": "AzureSynapseArtifacts1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://sssf.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/96ce8ff3-222d-4b43-8c54-79a9e83d34f0/resourceGroups/DE_Azure_From_Git_Proj/providers/Microsoft.Synapse/workspaces/sssf"
+		}
+	}
+}
