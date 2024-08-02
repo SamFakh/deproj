@@ -120,7 +120,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "DelimitedText2_copy1",
 						"type": "DatasetReference"
 					}
 				]
@@ -179,13 +179,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1_copy3",
+						"referenceName": "DelimitedText1_copy2",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "DelimitedText2_copy2",
 						"type": "DatasetReference"
 					}
 				]
@@ -244,16 +244,43 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1_copy4",
+						"referenceName": "DelimitedText1_copy3",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText2",
+						"referenceName": "DelimitedText2_copy3",
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Notebook1",
+				"type": "SynapseNotebook",
+				"dependsOn": [
+					{
+						"activity": "Copy data1_copy1_copy1_copy1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"snapshot": true
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureSynapseArtifacts1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
